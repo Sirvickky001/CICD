@@ -19,7 +19,6 @@ jobs:
       - name: Show current directory
         run: pwd && ls -la
 
-
       - name: Injects this enviroment variable automatically
         run: echo "Runner: $RUNNER_OS"
 
