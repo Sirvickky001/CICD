@@ -1,0 +1,13 @@
+{
+  "name": "cal-app",
+  "version": "1.0.0",
+  "description": "cal-app CI/CD learning project",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "echo 'No linter configured yet — passing'"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
