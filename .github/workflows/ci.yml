@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/cal-app
+  IMAGE_NAME: ghcr.io/sirvickky001/calapp
 
 jobs:
 
