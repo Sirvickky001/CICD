@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: secureshop
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: secureshop
+  template:
+    metadata:
+      labels:
+        app: secureshop
+    spec:
+      containers:
+        - name: app
+          image: ghcr.io/sirvickky001/cicd:latest
+          ports:
+            - containerPort: 3000
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+            requests:
+              cpu: "250m"
+              memory: "128Mi"
+          securityContext:
+            runAsNonRoot: true
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
