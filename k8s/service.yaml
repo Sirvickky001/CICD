@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: secureshop
-  namespace: dev
+  namespace: cal-app
 spec:
   selector:
     app: secureshop
